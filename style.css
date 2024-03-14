@@ -1,0 +1,123 @@
+h1{
+    font-family: "Palanquin Dark", sans-serif;
+}
+
+h2,h3,h4,h5,h6,p{
+    font-family: "Montserrat", sans-serif;
+}
+
+span{
+    font-family: "Mansalva", sans-serif;
+}
+
+.wrapper .carousel,
+.wrapper2 .carousel2,
+.wrapper3 .carousel3 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar,
+.carousel2::-webkit-scrollbar,
+.carousel3::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition,
+.carousel2.no-transition2,
+.carousel3.no-transition3 {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging,
+.carousel2.dragging2,
+.carousel3.dragging3 {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card,
+.carousel2.dragging2 .card2,
+.carousel3.dragging3 .card3 {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel :where(.card, .img),
+.carousel2 :where(.card2, .img2),
+.carousel3 :where(.card3, .img3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .card,
+.carousel2 .card2,
+.carousel3 .card3 {
+    scroll-snap-align: start;
+    list-style: none;
+    /* background: #fff; */
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .wrapper .carousel,
+    .wrapper2 .carousel2,
+    .wrapper3 .carousel3 {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .wrapper .carousel,
+    .wrapper2 .carousel2,
+    .wrapper3 .carousel3 {
+        grid-auto-columns: calc((100% / 1) - 9px);
+    }
+}
+
+
+.hoverBg{
+    background-color: #ff9933;
+}
+
+.destination-images img{
+    -webkit-mask-image: url(images/thumb-mask-image.png);
+    mask-image: url(images/thumb-mask-image.png);
+    -webkit-mask-position: top;
+    mask-position: top;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.panel.active{
+    flex: 2;
+}
+
+@keyframes anim1 {
+    to{
+        transform: translateX(0);
+    }
+    
+    from{
+        transform: translateX(-900px);
+    }
+}
+
+#myEmail::placeholder{
+    color: white;
+}

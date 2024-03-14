@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind Script  -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- title -->
+    <title>Welcome to Gujarat Tourism</title>
+
+    <!-- favIcon -->
+    <link rel="shortcut icon" href="https://seeklogo.com/images/G/gujarat-tourism-logo-FAAFFB32AE-seeklogo.com.png" type="image/x-icon">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-[#f2efdf]">
+    
+    <div class="black-shade absolute top-0 left-0 bg-black/50 w-full h-full hidden"></div>
+
+    <nav class="bg-[#f2efdf] flex items-center justify-between py-5 px-8">
+        <div class="logo">
+            <img width="80" src="images/logo/gujarat-tourism-logo.png" alt="">
+        </div>
+        <ul class="absolute top-0 right-0 bg-[#f2efdf] h-full w-[250px] uppercase text-sm font-bold hidden lg:relative z-50 lg:flex lg:w-full lg:items-center lg:justify-center">
+            <div id="close" class="absolute top-3 right-0 px-3 lg:hidden cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill="#000000" fill-rule="evenodd" d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z" clip-rule="evenodd" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+            <div class="flex flex-col mt-14 lg:flex lg:flex-row lg:items-center lg:gap-8 lg:mt-0">
+                <li class="li-1 bg-[#ff9933] py-3 px-3 hover:text-[#ff9933] transition-all duration-300 cursor-pointer lg:bg-transparent lg:py-0 lg:px-0"><a href=""><p>home</p></a></li>
+                <li class="li-2 py-3 px-3 hover:text-[#ff9933] transition-all duration-300 cursor-pointer lg:bg-transparent lg:py-0 lg:px-0"><a href=""><p>accommodation</p></a></li>
+                <li class="li-3 py-3 px-3 hover:text-[#ff9933] transition-all duration-300 cursor-pointer lg:bg-transparent lg:py-0 lg:px-0"><a href=""><p>destination</p></a></li>
+                <li class="li-4 py-3 px-3 hover:text-[#ff9933] transition-all duration-300 cursor-pointer lg:bg-transparent lg:py-0 lg:px-0"><a href=""><p>shop</p></a></li>
+                <li class="li-5 py-3 px-3 hover:text-[#ff9933] transition-all duration-300 cursor-pointer lg:bg-transparent lg:py-0 lg:px-0"><a href=""><p>news</p></a></li>
+                <li class="li-6 py-3 px-3 hover:text-[#ff9933] transition-all duration-300 cursor-pointer lg:bg-transparent lg:py-0 lg:px-0"><a href=""><p>pages</p></a></li>
+            </div>
+        </ul>
+        <div class="search flex items-center gap-7">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" x="0" y="0" viewBox="0 0 612.01 612.01" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M606.209 578.714 448.198 423.228C489.576 378.272 515 318.817 515 253.393 514.98 113.439 399.704 0 257.493 0S.006 113.439.006 253.393s115.276 253.393 257.487 253.393c61.445 0 117.801-21.253 162.068-56.586l158.624 156.099c7.729 7.614 20.277 7.614 28.006 0a19.291 19.291 0 0 0 .018-27.585zM257.493 467.8c-120.326 0-217.869-95.993-217.869-214.407S137.167 38.986 257.493 38.986c120.327 0 217.869 95.993 217.869 214.407S377.82 467.8 257.493 467.8z" fill="#000" opacity="1" data-original="#000000"></path></g></svg>
+            <div class="menu lg:hidden z-20">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g data-name="4"><path d="M58 31H6a1 1 0 0 0 0 2h52a1 1 0 0 0 0-2zM6 18h52a1 1 0 0 0 0-2H6a1 1 0 0 0 0 2zM58 46H6a1 1 0 0 0 0 2h52a1 1 0 0 0 0-2z" fill="#000" opacity="1" data-original="#000000" class=""></path></g></g></svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- heropage -->
+    <section class="heropage grid grid-cols-1 items-center gap-1 px-8 py-5 lg:grid-cols-2 gap-y-12">
+        <div class="text-center lg:text-start">
+            <span class="text-[45px] font-normal">Discover The</span>
+            <div class="relative">
+                <h1 class="text-[55px] font-[900] leading-[80px] mb-5 md:text-[85px]">Adventure <br> Travels</h1>
+                <span class="after:content-[''] after:absolute after:left-0 after:top-0 after:m-auto">
+                    <img class="w-72 m-auto lg:m-0" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 358.7 39.8' style='enable-background:new 0 0 358.7 39.8;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .underline-svg-0%7Bfill:currentcolor;%7D %3C/style%3E%3Cg%3E%3Cg transform='translate(0 0)'%3E%3Cpath class='underline-svg-0' d='M78.5,0.2C62.8,1.7,47.3,4.9,32.3,9.9c-6.3,2-7.5,2.3-7.7,1.8c-0.6-1.3-1.5-1.3-7.1,0 c-7.8,1.8-14.4,4.1-16.1,5.5c-1.1,1.1-1.6,2.6-1.4,4.2c0.5,2.9,2.5,4.4,6.2,4.4c3.3,0,6.3-0.8,18.2-4.7c20.4-6.8,27-8.6,37.9-10.6 C74,8.2,85.9,7.3,97.8,7.6c9.2,0.2,12.1,0.6,14.5,1.8c1.3,0.7,1.3,1.4,0.4,3.8c-1,2.5-2.4,4.6-7.3,11.2c-5.6,7.4-6.5,9.6-5.2,12.7 c0.8,1.8,2.3,2.7,4.6,2.6c3.2-0.1,8-1.5,29.9-8.9c27.7-9.3,42.5-12.9,48.8-11.8c1.8,0.3,2.1,0.5,3.5,2.2c3,3.6,6.9,5.1,14.4,5.4 c6,0.3,10-0.1,24.4-2.3c15.3-2.3,19.5-2.7,28.9-3.1c21.5-0.7,45.5,1.3,75,6.4c19.1,3.3,27.7,4.5,28.7,4.1c0.6-0.3,0.7-1.5,0.1-2 c-2.1-0.6-4.3-1.1-6.5-1.3c-3.4-0.5-9.1-1.6-12.7-2.3c-33.7-6.6-48.8-8.6-70.4-9.7c-14.6-0.7-25.8-0.1-44.6,2.6 c-12.7,1.8-19.2,2.3-23.9,1.8c-5.9-0.6-8.5-1.6-10.6-4.3c-2.3-3-3-3.2-9.5-3.2c-9.3,0-14.4,1.3-48,11.9c-15.1,4.8-22.7,7-23.9,7 c-0.3,0,0.8-1.7,3.2-4.9c1.9-2.4,3.6-4.9,5.1-7.5c4.6-8.9,3.3-15.6-3.5-18.2c-3.9-1.5-6.5-1.7-18.9-1.8 C87.5-0.1,80.4,0.1,78.5,0.2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A" alt="">
+                </span>
+            </div>
+            <p class="text-xl font-normal mt-5">Extraordinary journey begins</p>
+        </div>
+        <div class="grid-cols-2 gap-8 items-center justify-center hidden md:grid">
+            <div class="grid grid-cols-1 gap-8">
+                <img src="images/main-page/image-1.avif" alt="">
+                <img class="w-full h-80 object-cover object-top" src="images/main-page/image-2.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-[63vh] w-72 relative top-24 object-cover" src="images/main-page/image-3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- adventure -->
+    <section class="adventure mt-20 px-8 pb-8">
+        <div class="text-center pt-12">
+            <span class="text-2xl font-normal md:3xl">Discover Top Destinations</span>
+            <h1 class="text-3xl font-bold mt-2 md:text-5xl">Top Destinations</h1>
+        </div>
+        <div class="py-6 mt-6">
+            <div class="flash-deal flex px-3 items-center justify-center relative mt-4">
+                <div class="wrapper max-w-[1300px] w-[100%] relative">
+                    <i id="left" class="fa-solid fa-angle-left top-[50%] left-[-1px] h-[40px] z-40 w-[40px] absolute text-xl text-center flex items-center justify-center bg-[#f2efdf] border   border-black rounded-full shadow-xl translate-y-[-50%] transition-transform duration-300 cursor-pointer"></i>
+                    <ul class="carousel">
+                        <div class="card text-center">
+                            <img class="rounded-full w-60 h-60 m-auto cursor-pointer object-cover" src="images/top-destination/dwarka.jpg" alt="">
+                            <h1 class="text-[25px] font-normal mt-4">Devbhoomi Dwarka</h1>
+                            <p class="text-base font-normal text-[#555555] py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, hic!</p>
+                            <button class="text-white text-base font-medium bg-black rounded-full px-12 py-2">Explore</button>
+                        </div>
+                        <div class="card text-center">
+                            <img class="rounded-full w-60 h-60 m-auto cursor-pointer object-cover" src="images/top-destination/smritivan.jpg" alt="">
+                            <h1 class="text-[25px] font-normal mt-4">Smritivan</h1>
+                            <p class="text-base font-normal text-[#555555] py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, hic!</p>
+                            <button class="text-white text-base font-medium bg-black rounded-full px-12 py-2">Explore</button>
+                        </div>
+                        <div class="card text-center">
+                            <img class="rounded-full w-60 h-60 m-auto cursor-pointer object-cover object-left" src="images/top-destination/pavagadh.jpg" alt="">
+                            <h1 class="text-[25px] font-normal mt-4">Pavagadh Kalika Tempale</h1>
+                            <p class="text-base font-normal text-[#555555] py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, hic!</p>
+                            <button class="text-white text-base font-medium bg-black rounded-full px-12 py-2">Explore</button>
+                        </div>
+                        <div class="card text-center">
+                            <img class="rounded-full w-60 h-60 m-auto cursor-pointer object-cover" src="images/top-destination/greate-rann.jpg" alt="">
+                            <h1 class="text-[25px] font-normal mt-4">Greate rann of kutch</h1>
+                            <p class="text-base font-normal text-[#555555] py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, hic!</p>
+                            <button class="text-white text-base font-medium bg-black rounded-full px-12 py-2">Explore</button>
+                        </div>
+                        <div class="card text-center">
+                            <img class="rounded-full w-60 h-60 m-auto cursor-pointer object-cover object-right" src="images/top-destination/statue-of-unity.jpg" alt="">
+                            <h1 class="text-[25px] font-normal mt-4">The Statue Of Unity</h1>
+                            <p class="text-base font-normal text-[#555555] py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, hic!</p>
+                            <button class="text-white text-base font-medium bg-black rounded-full px-12 py-2">Explore</button>
+                        </div>
+                        <div class="card text-center">
+                            <img class="rounded-full w-60 h-60 m-auto cursor-pointer object-cover" src="images/top-destination/atal-bridge.jpeg" alt="">
+                            <h1 class="text-[25px] font-normal mt-4">Atal Bridge</h1>
+                            <p class="text-base font-normal text-[#555555] py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, hic!</p>
+                            <button class="text-white text-base font-medium bg-black rounded-full px-12 py-2">Explore</button>
+                        </div>
+                        <div class="card text-center">
+                            <img class="rounded-full w-60 h-60 m-auto cursor-pointer object-cover" src="images/top-destination/sasan-gir.jpg" alt="">
+                            <h1 class="text-[25px] font-normal mt-4">Sasan Gir</h1>
+                            <p class="text-base font-normal text-[#555555] py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, hic!</p>
+                            <button class="text-white text-base font-medium bg-black rounded-full px-12 py-2">Explore</button>
+                        </div>
+                        <div class="card text-center">
+                            <img class="rounded-full w-60 h-60 m-auto cursor-pointer object-cover" src="images/top-destination/adi-kadi-vav.jpg" alt="">
+                            <h1 class="text-[25px] font-normal mt-4">Adi Kadi Vav</h1>
+                            <p class="text-base font-normal text-[#555555] py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, hic!</p>
+                            <button class="text-white text-base font-medium bg-black rounded-full px-12 py-2">Explore</button>
+                        </div>
+                        <div class="card text-center">
+                            <img class="rounded-full w-60 h-60 m-auto cursor-pointer object-cover object-left" src="images/top-destination/shrimad-ashram.jpg" alt="">
+                            <h1 class="text-[25px] font-normal mt-4">shrimad Rajchandra Ashram</h1>
+                            <p class="text-base font-normal text-[#555555] py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, hic!</p>
+                            <button class="text-white text-base font-medium bg-black rounded-full px-12 py-2">Explore</button>
+                        </div>
+                    </ul>
+                    <i id="right" class="fa-solid fa-angle-right top-[50%] right-[-1px] h-[40px] w-[40px] absolute text-xl text-center flex items-center justify-center bg-[#f2efdf] border border-black rounded-full shadow-xl translate-y-[-50%] transition-transform duration-300 cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fairs & Festivals - The life of Gujarat -->
+    <section class="festivals bg-[url('images/background-1.jpg')] px-2 py-5 grid grid-cols-1 gap-7 lg:grid-cols-2 md:px-8">
+        <div class="text-center pt-12 text-white md:text-start">
+            <div>
+                <span class="text-2xl font-normal md:3xl">Fairs & Festivals</span>
+                <h1 class="text-3xl font-bold mt-2 md:text-5xl">The life of Gujarat</h1>
+            </div>
+            <div class="mt-8 flex flex-col gap-3">
+                <div class="item-1 group relative flex flex-col items-start gap-5 py-5 px-7 cursor-pointer transition-all duration-200 md:flex-row">
+                    <div class="absolute top-0 left-0 bg-white w-2 h-0 group-hover:h-full transition duration-300"></div>
+                    <img class="w-28 h-28 rounded-full m-auto" src="images/festivals/fastival-1.jpg" alt="">
+                    <div>
+                        <h1 class="text-3xl font-normal">Rann Utsav</h1>
+                        <p class="text-base font-normal text-clip line-clamp-4">Kutch or Rannutsav, a unique manifestation of the varied cultural ethos of the region is known for its ethnic flavor and celebrative zest.</p>
+                    </div>
+                </div>
+                <div class="item-2 group relative flex flex-col items-start gap-5 py-5 px-7 cursor-pointer transition-all duration-200 md:flex-row">
+                    <div class="absolute top-0 left-0 bg-white w-2 h-0 group-hover:h-full transition duration-300"></div>
+                    <img class="w-28 h-28 rounded-full object-cover m-auto" src="images/festivals/fastival-2.jpg" alt="">
+                    <div>
+                        <h1 class="text-3xl font-normal">Kite Festival</h1>
+                        <p class="text-base font-normal text-clip line-clamp-4">The festival of Uttarayan is a uniquely Gujarati phenomenon, when the skies over most cities of the state fill with kites from before dawn until well after dark.</p>
+                    </div>
+                </div>
+                <div class="item-3 group relative flex flex-col items-start gap-5 py-5 px-7 cursor-pointer transition-all duration-200 md:flex-row">
+                    <div class="absolute top-0 left-0 bg-white w-2 h-0 group-hover:h-full transition duration-300"></div>
+                    <img class="w-28 h-28 rounded-full object-cover m-auto" src="images/festivals/fastival-3.jpg" alt="">
+                    <div>
+                        <h1 class="text-3xl font-normal">Tarnetar fair</h1>
+                        <p class="text-base font-normal text-clip line-clamp-4">Based on the legend of Draupadi's swayamvara, this fair is a celebration of ethnic Gujarat’s folk-dance, music, costumes and the arts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="image-1 relative">
+                <div class="relative">
+                    <img class="w-full h-[100vh] object-cover object-left" src="images/festivals/fastival-image-1.jpg" alt="">
+                    <div class="text-white bg-[#ff9933] absolute left-0 bottom-0 h-20 w-36 flex items-center justify-center tracking-widest rounded-tr-2xl hover:bg-black hover:text-white transition duration-300 cursor-pointer md:h-28 md:w-44 lg:h-32 lg:w-56">
+                        <a href=""><p class="uppercase">click here</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-2 relative hidden">
+                <div class="relative">
+                    <img class="w-full h-[100vh] object-cover object-left" src="images/festivals/fastival-image-2.jpg" alt="">
+                    <div class="text-white bg-[#ff9933] absolute left-0 bottom-0 h-20 w-36 flex items-center justify-center tracking-widest rounded-tr-2xl hover:bg-black hover:text-white transition duration-300 cursor-pointer md:h-28 md:w-44 lg:h-32 lg:w-56">
+                        <a href=""><p class="uppercase">click here</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-3 relative hidden">
+                <div class="relative">
+                    <img class="w-full h-[100vh] object-cover" src="images/festivals/fastival-image-3.jpg" alt="">
+                    <div class="text-white bg-[#ff9933] absolute left-0 bottom-0 h-20 w-36 flex items-center justify-center tracking-widest rounded-tr-2xl hover:bg-black hover:text-white transition duration-300 cursor-pointer md:h-28 md:w-44 lg:h-32 lg:w-56">
+                        <a href=""><p class="uppercase">click here</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- as per your interest -->
+    <section class="mt-8 px-2 py-8 lg:px-8">
+        <div class="text-center">
+            <span class="text-2xl font-normal md:3xl">Pick Your Trail</span>
+            <h1 class="text-3xl font-bold mt-2 md:text-5xl">See Gujarat - As Per Your Interest</h1>
+        </div>
+        <div class="py-6 mt-6">
+            <div class="flash-deal flex px-3 items-center justify-center relative mt-4">
+                <div class="wrapper2 max-w-[1300px] w-[100%] relative py-1 mt-12 lg:mt-0">
+                    <ul class="carousel2">
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/gandhi-circle.jpeg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Gandhi Circle</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/heritage-sites.jpeg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Heritage Sites</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Religious-Sites.jpg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Religious Sites</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Buddhist-Circuit.jpeg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Buddhist Circuit</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Flora-Fauna.jpeg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Flora - Fauna</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Beaches.jpg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Beaches</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Bird-Watching-Sites.jpg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Bird Watching Sites</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Weekend-Get-aways.png" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Weekend Get aways</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Museums.jpeg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Museums</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Golf-Tourism.jpg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Golf Tourism</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Wellness-Tourism.jpg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Wellness Tourism</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Unesco-World-Heritage-Site.jpg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Unesco World Heritage Site</p>
+                            </div>
+                        </div>
+                        <div class="card2 group text-center relative overflow-hidden">
+                            <img class="rounded-lg w-full h-full object-cover" src="images/see-gujarat/Indus-Valley-Civilization-Sites.jpeg" alt="">
+                            <div class="bg-gradient-to-t from-black translate-y-[120%] group-hover:translate-y-0 absolute left-0 bottom-4 font-bold text-xl py-1 w-full h-full flex items-end justify-center text-white rounded-lg">
+                                <p class="pb-5">Indus Valley Civilization Sites</p>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="absolute -top-10 right-0">
+                        <i id="left" class="fa-solid fa-angle-left top-0 right-[50px] h-[40px] z-40 w-[40px] absolute text-xl text-center flex items-center justify-center bg-[#f2efdf] border border-black rounded-full shadow-xl translate-y-[-50%] transition-transform duration-300 cursor-pointer"></i>
+                        <i id="right" class="fa-solid fa-angle-right top-0 right-[-1px] h-[40px] w-[40px] absolute text-xl text-center flex items-center justify-center bg-[#f2efdf] border border-black rounded-full shadow-xl translate-y-[-50%] transition-transform duration-300 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Destination -->
+    <section class="bg-[url('images/map-bg.png')] bg-center mt-8 px-2 py-8 lg:px-8">
+        <div class="text-center">
+            <svg class="w-8 m-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42.2 42.2" style="enable-background:new 0 0 42.2 42.2;" xml:space="preserve"><style type="text/css">.lpin-0{fill:none;stroke:currentcolor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}	.lpin-1{fill:none;stroke:currentcolor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:28,28;}</style><g><g><path class="lpin-0" d="M32.8,0.8c4.7,0,8.5,3.8,8.5,8.6c0,1.3-0.3,2.6-0.9,3.8c-1.1,2.2-6.7,6-7.6,10.2   c-1.6-4-6.5-8-7.6-10.2C23.1,8.9,24.8,3.8,29,1.7C30.2,1.1,31.5,0.8,32.8,0.8z"></path>		<path class="lpin-0" d="M32.8,5c2.3,0,4.2,1.9,4.2,4.2s-1.9,4.2-4.2,4.2c-2.3,0-4.2-1.9-4.2-4.2c0,0,0,0,0,0   C28.6,6.9,30.5,5,32.8,5z"></path>		<path class="lpin-0" d="M12.4,9.8c6.4,0,11.6,5.2,11.6,11.6c0,1.8-0.4,3.6-1.2,5.2c-1.5,3-9.1,8.2-10.4,13.9   C10.3,35,3.5,29.6,2,26.6C-0.8,20.9,1.5,13.9,7.2,11C8.8,10.2,10.6,9.8,12.4,9.8z"></path>		<path class="lpin-0" d="M12.4,15.5c3.2,0,5.8,2.6,5.8,5.8c0,3.2-2.6,5.8-5.8,5.8s-5.8-2.6-5.8-5.8l0,0   C6.7,18.1,9.2,15.5,12.4,15.5z"></path>		<path class="lpin-1" d="M15.7,41.1c4,0.6,11.5,0.1,16.4-0.3c8.8-0.8,7.7-6.5,0.1-7c-1.4-0.1-5-0.2-5.9-0.7   c-1.7-0.9-2.1-3.4,0.4-4.1c1.3-0.2,2.6-0.7,3.8-1.4c1.1-0.9,2-2.1,2.4-3.5"></path></g></g></svg>
+            <span class="text-2xl font-normal md:3xl">Explore Gujarat</span>
+            <h1 class="text-3xl font-bold mt-2 md:text-5xl">Find your best destinations</h1>
+        </div>
+        <div class="grid grid-cols-1 gap-5 mt-12 md:grid-cols-2 lg:grid-cols-4">
+            <div class="destination px-6 py-6 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+                <div class="destination-images">
+                    <img class="cursor-pointer w-full h-52 object-cover object-top" src="images/explore-gujarat/karnavati.jpg" alt="">
+                </div>
+                <div class="flex items-start flex-col pt-4">
+                    <h1 class="text-2xl font-normal">Ahmedabad</h1>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M256 0C161.896 0 85.333 76.563 85.333 170.667c0 28.25 7.063 56.26 20.49 81.104L246.667 506.5c1.875 3.396 5.448 5.5 9.333 5.5s7.458-2.104 9.333-5.5l140.896-254.813c13.375-24.76 20.438-52.771 20.438-81.021C426.667 76.563 350.104 0 256 0zm0 256c-47.052 0-85.333-38.281-85.333-85.333S208.948 85.334 256 85.334s85.333 38.281 85.333 85.333S303.052 256 256 256z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                        <p class="text-xl font-normal">Jama Masjid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="destination px-6 py-6 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+                <div class="destination-images">
+                    <img class="cursor-pointer w-full h-52 object-cover" src="images/explore-gujarat/surat.jpg" alt="">
+                </div>
+                <div class="flex items-start flex-col pt-4">
+                    <h1 class="text-2xl font-normal">Surat</h1>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M256 0C161.896 0 85.333 76.563 85.333 170.667c0 28.25 7.063 56.26 20.49 81.104L246.667 506.5c1.875 3.396 5.448 5.5 9.333 5.5s7.458-2.104 9.333-5.5l140.896-254.813c13.375-24.76 20.438-52.771 20.438-81.021C426.667 76.563 350.104 0 256 0zm0 256c-47.052 0-85.333-38.281-85.333-85.333S208.948 85.334 256 85.334s85.333 38.281 85.333 85.333S303.052 256 256 256z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                        <p class="text-xl font-normal">Dutch Cemetery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="destination px-6 py-6 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+                <div class="destination-images">
+                    <img class="cursor-pointer w-full h-52 object-cover" src="images/explore-gujarat/dwarka.jpeg" alt="">
+                </div>
+                <div class="flex items-start flex-col pt-4">
+                    <h1 class="text-2xl font-normal">Dwarka</h1>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M256 0C161.896 0 85.333 76.563 85.333 170.667c0 28.25 7.063 56.26 20.49 81.104L246.667 506.5c1.875 3.396 5.448 5.5 9.333 5.5s7.458-2.104 9.333-5.5l140.896-254.813c13.375-24.76 20.438-52.771 20.438-81.021C426.667 76.563 350.104 0 256 0zm0 256c-47.052 0-85.333-38.281-85.333-85.333S208.948 85.334 256 85.334s85.333 38.281 85.333 85.333S303.052 256 256 256z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                        <p class="text-xl font-normal">Okha Beach</p>
+                    </div>
+                </div>
+            </div>
+            <div class="destination px-6 py-6 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+                <div class="destination-images">
+                    <img class="cursor-pointer w-full h-52 object-cover" src="images/explore-gujarat/gandhinagar.jpg" alt="">
+                </div>
+                <div class="flex items-start flex-col pt-4">
+                    <h1 class="text-2xl font-normal">Gandhinagar</h1>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M256 0C161.896 0 85.333 76.563 85.333 170.667c0 28.25 7.063 56.26 20.49 81.104L246.667 506.5c1.875 3.396 5.448 5.5 9.333 5.5s7.458-2.104 9.333-5.5l140.896-254.813c13.375-24.76 20.438-52.771 20.438-81.021C426.667 76.563 350.104 0 256 0zm0 256c-47.052 0-85.333-38.281-85.333-85.333S208.948 85.334 256 85.334s85.333 38.281 85.333 85.333S303.052 256 256 256z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                        <p class="text-xl font-normal">Adalaj Ni Vav</p>
+                    </div>
+                </div>
+            </div>
+            <div class="destination px-6 py-6 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+                <div class="destination-images">
+                    <img class="cursor-pointer w-full h-52 object-cover" src="images/explore-gujarat/kutch.jpg" alt="">
+                </div>
+                <div class="flex items-start flex-col pt-4">
+                    <h1 class="text-2xl font-normal">Kutch</h1>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M256 0C161.896 0 85.333 76.563 85.333 170.667c0 28.25 7.063 56.26 20.49 81.104L246.667 506.5c1.875 3.396 5.448 5.5 9.333 5.5s7.458-2.104 9.333-5.5l140.896-254.813c13.375-24.76 20.438-52.771 20.438-81.021C426.667 76.563 350.104 0 256 0zm0 256c-47.052 0-85.333-38.281-85.333-85.333S208.948 85.334 256 85.334s85.333 38.281 85.333 85.333S303.052 256 256 256z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                        <p class="text-xl font-normal">Mandvi Beach</p>
+                    </div>
+                </div>
+            </div>
+            <div class="destination px-6 py-6 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+                <div class="destination-images">
+                    <img class="cursor-pointer w-full h-52 object-cover" src="images/explore-gujarat/banaskatha.jpg" alt="">
+                </div>
+                <div class="flex items-start flex-col pt-4">
+                    <h1 class="text-2xl font-normal">Banaskatha</h1>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M256 0C161.896 0 85.333 76.563 85.333 170.667c0 28.25 7.063 56.26 20.49 81.104L246.667 506.5c1.875 3.396 5.448 5.5 9.333 5.5s7.458-2.104 9.333-5.5l140.896-254.813c13.375-24.76 20.438-52.771 20.438-81.021C426.667 76.563 350.104 0 256 0zm0 256c-47.052 0-85.333-38.281-85.333-85.333S208.948 85.334 256 85.334s85.333 38.281 85.333 85.333S303.052 256 256 256z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                        <p class="text-xl font-normal">Bear Sanctuary</p>
+                    </div>
+                </div>
+            </div>
+            <div class="destination px-6 py-6 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+                <div class="destination-images">
+                    <img class="cursor-pointer w-full h-52 object-cover" src="images/explore-gujarat/rajkot.jpg" alt="">
+                </div>
+                <div class="flex items-start flex-col pt-4">
+                    <h1 class="text-2xl font-normal">Rajkot</h1>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M256 0C161.896 0 85.333 76.563 85.333 170.667c0 28.25 7.063 56.26 20.49 81.104L246.667 506.5c1.875 3.396 5.448 5.5 9.333 5.5s7.458-2.104 9.333-5.5l140.896-254.813c13.375-24.76 20.438-52.771 20.438-81.021C426.667 76.563 350.104 0 256 0zm0 256c-47.052 0-85.333-38.281-85.333-85.333S208.948 85.334 256 85.334s85.333 38.281 85.333 85.333S303.052 256 256 256z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                        <p class="text-xl font-normal">Khodaldham Temple</p>
+                    </div>
+                </div>
+            </div>
+            <div class="destination px-6 py-6 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+                <div class="destination-images">
+                    <img class="cursor-pointer w-full h-52 object-cover" src="images/explore-gujarat/vadodara.jpg" alt="">
+                </div>
+                <div class="flex items-start flex-col pt-4">
+                    <h1 class="text-2xl font-normal">Vadodara</h1>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M256 0C161.896 0 85.333 76.563 85.333 170.667c0 28.25 7.063 56.26 20.49 81.104L246.667 506.5c1.875 3.396 5.448 5.5 9.333 5.5s7.458-2.104 9.333-5.5l140.896-254.813c13.375-24.76 20.438-52.771 20.438-81.021C426.667 76.563 350.104 0 256 0zm0 256c-47.052 0-85.333-38.281-85.333-85.333S208.948 85.334 256 85.334s85.333 38.281 85.333 85.333S303.052 256 256 256z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                        <p class="text-xl font-normal">Kirti Temple</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities -->
+    <section class="bg-[url('images/background-1.jpg')] text-white mt-8 bg-cover px-2 py-8 lg:px-8">
+        <div class="text-center pt-12 pb-7 w-full m-auto md:w-[50%]">
+            <h1 class="text-3xl font-bold leading-[30px] md:leading-[70px] md:text-[52px]">Activities that makes you thrilled</h1>
+            <p class="font-normal text-base mt-4">At augue eget arcu dictum varius duis at. Elit pellentesque habitant morbi tristique senectus et netus et. A arcu cursus vitae congue.</p>
+        </div>
+        <div class="pt-12 grid grid-cols-1 w-full gap-4 lg:flex">
+            <div id="slide-image-1" class="panel active bg-[url('images/Activities/water-skiing.jpg')] bg-cover bg-center bg-no-repeat h-[80vh] rounded-3xl flex-[0.5] relative transition-all duration-700 cursor-pointer overflow-hidden">
+                <h1 class="absolute left-0 bottom-0 bg-black/40 w-full h-full rounded-3xl">
+                    <div id="slide-image-details-1" class="z-10 absolute left-3 bottom-8 flex flex-col gap-3 opacity-1 translate-x-[0px]">
+                        <p class="uppercase text-sm md:text-base">explore your journey</p>
+                        <h1 class="text-4xl font-semibold md:text-6xl">Water Skiing</h1>
+                        <p class="text-xl">Take a trip</p>
+                    </div>
+                </h1>
+            </div>
+            <div id="slide-image-2" class="panel bg-[url('images/Activities/waterfall.jpeg')] bg-cover bg-center bg-no-repeat h-[80vh] rounded-3xl flex-[0.5] relative transition-all duration-700 cursor-pointer overflow-hidden">
+                <h1 class="absolute left-0 bottom-0 bg-black/40 w-full h-full rounded-3xl">
+                    <div id="slide-image-details-2" class="z-10 absolute left-3 bottom-8 flex flex-col gap-3 md:opacity-0">
+                        <p class="uppercase text-sm md:text-base">adventure journey</p>
+                        <h1 class="text-4xl font-semibold md:text-6xl">WaterFall</h1>
+                        <p class="text-xl">Take a trip</p>
+                    </div>
+                </h1>
+            </div>
+            <div id="slide-image-3" class="panel bg-[url('images/Activities/solo-travelling.jpg')] bg-cover bg-center bg-no-repeat h-[80vh] rounded-3xl flex-[0.5] relative transition-all duration-700 cursor-pointer overflow-hidden">
+                <h1 class="absolute left-0 bottom-0 bg-black/40 w-full h-full rounded-3xl">
+                    <div id="slide-image-details-3" class="z-10 absolute left-3 bottom-8 flex flex-col gap-3 md:opacity-0">
+                        <p class="uppercase text-sm md:text-base">Enjoy yourself</p>
+                        <h1 class="text-4xl font-semibold md:text-6xl">Solo Travelrs</h1>
+                        <p class="text-xl">Take a trip</p>
+                    </div>
+                </h1>
+            </div>  
+        </div>
+    </section>
+
+    <!-- gallary -->
+    <section class="gallary grid grid-cols-2 gap-5 py-8 md:grid-cols-3 lg:grid-cols-6">
+        <div class="group relative overflow-hidden cursor-pointer">
+            <img class="w-full h-full object-cover" src="images/gallary/gallary-1.jpg" alt="">
+            <div class="absolute w-full h-full left-0 top-0 hidden items-center justify-center bg-[#ff9933]/60 group-hover:flex transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0" viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path><path d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+        </div>
+        <div class="group relative overflow-hidden cursor-pointer">
+            <img class="w-full h-full object-cover" src="images/gallary/gallary-2.jpg" alt="">
+            <div class="absolute w-full h-full left-0 top-0 hidden items-center justify-center bg-[#ff9933]/60 group-hover:flex transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0" viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path><path d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+        </div>
+        <div class="group relative overflow-hidden cursor-pointer">
+            <img class="w-full h-full object-cover" src="images/gallary/gallary-3.jpg" alt="">
+            <div class="absolute w-full h-full left-0 top-0 hidden items-center justify-center bg-[#ff9933]/60 group-hover:flex transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0" viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path><path d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+        </div>
+        <div class="group relative overflow-hidden cursor-pointer">
+            <img class="w-full h-full object-cover" src="images/gallary/gallary-4.jpg" alt="">
+            <div class="absolute w-full h-full left-0 top-0 hidden items-center justify-center bg-[#ff9933]/60 group-hover:flex transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0" viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path><path d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+        </div>
+        <div class="group relative overflow-hidden cursor-pointer">
+            <img class="w-full h-full object-cover" src="images/gallary/gallary-5.jpeg" alt="">
+            <div class="absolute w-full h-full left-0 top-0 hidden items-center justify-center bg-[#ff9933]/60 group-hover:flex transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0" viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path><path d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+        </div>
+        <div class="group relative overflow-hidden cursor-pointer">
+            <img class="w-full h-full object-cover" src="images/gallary/gallary-6.jpg" alt="">
+            <div class="absolute w-full h-full left-0 top-0 hidden items-center justify-center bg-[#ff9933]/60 group-hover:flex transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0" viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path><path d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0" fill="#fff" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[url(images/background-2.jpg)] bg-cover bg-no-repeat bg-center px-2 pt-20 lg:px-8 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-black/70"></div>
+        <div class="relative w-full">
+            <img class="w-[30%] m-auto md:w-[20%] lg:w-[10%]" src="images/logo/gujarat-tourism-logo.png" alt="">
+        </div>
+        <div class="relative z-10 text-white mt-16 grid grid-cols-1 px-8 md:grid-cols-3 lg:grid-cols-5 gap-y-20">
+            <div class="flex flex-col gap-8 md:m-auto md:items-center md:col-span-3 lg:items-start lg:col-span-2">
+                <h2 class="font-medium text-base w-[50%]">Udyog Bhavan, Block No. 16,4th Floor, Sector-11,Gandhinagar - 382 010.</h2>
+                <div class="font-medium text-base">
+                    <h2>Toll Free Number:1800 203 1111</h2>
+                    <h2>E -mail: info@gujarattourism.com</h2>
+                </div>
+            </div>
+            <div class="uppercase font-medium text-base flex flex-col gap-5">
+                <h3 class="w-max hover:text-[#ff9933] transition duration-300 cursor-pointer">home</h3>
+                <h3 class="w-max hover:text-[#ff9933] transition duration-300 cursor-pointer">about us</h3>
+                <h3 class="w-max hover:text-[#ff9933] transition duration-300 cursor-pointer">tours</h3>
+                <h3 class="w-max hover:text-[#ff9933] transition duration-300 cursor-pointer">faq</h3>
+                <h3 class="w-max hover:text-[#ff9933] transition duration-300 cursor-pointer">contact us</h3>
+            </div>
+            <div class="uppercase font-medium text-base flex flex-col gap-5">
+                <h3 class="w-max hover:text-[#ff9933] transition duration-300 cursor-pointer">Ahmedabad</h3>
+                <h3 class="w-max hover:text-[#ff9933] transition duration-300 cursor-pointer">Surat</h3>
+                <h3 class="w-max hover:text-[#ff9933] transition duration-300 cursor-pointer">Rajkot</h3>
+                <h3 class="w-max hover:text-[#ff9933] transition duration-300 cursor-pointer">Bhavnagar</h3>
+                <h3 class="w-max hover:text-[#ff9933] transition duration-300 cursor-pointer">Kutch</h3>
+            </div>
+            <div class="">
+                <h2 class="text-base font-medium uppercase w-[70%]">get update on new tours & blog news</h2>
+                <div class="flex items-center cursor-pointer mt-5 mb-3">
+                    <input class="bg-transparent text-white border-t-0 border-l-0 border-r-0 border-b-2 border-white focus:ring-0 focus:border-b-white" id="myEmail" type="email" placeholder="Email">
+                </div>
+                <button>
+                    <h2 class="uppercase font-semibold text-base bg-[#ff9933] text-white px-4 py-1 rounded-lg">send mail</h2>
+                </button>
+            </div>
+        </div>
+        <hr class="mt-8">
+        <div class="relative flex items-center justify-center py-8">
+            <h2 class="text-base font-medium text-white">© 2023, Gujarat Tourism</h2>
+        </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
