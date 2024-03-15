@@ -132,7 +132,6 @@ item3.addEventListener("mouseleave",()=>{
 
 
 // second scroller
-// second scroller
 const wrapper2 = document.querySelector(".wrapper2");
 const carousel2 = document.querySelector(".carousel2");
 const firstCardWidth2 = carousel2.querySelector(".card2").offsetWidth;
@@ -265,24 +264,31 @@ slideImage3.addEventListener("mouseover", function() {
 });
 
 
-// navbar
-$(document).ready(function () {
-    $(".menu").click(function() { 
-        $("ul").show(500);
-        $('body').css('overflow', 'hidden');
-        $('.black-shade').show();
-    });
-    $("#close").click(function() { 
-        $("ul").hide(500);
-        $('body').css('overflow', 'scroll');
-        $('.black-shade').hide();
-    });
+let menuBar = document.querySelector(".menu");
+let closeBtn = document.querySelector("#close");
+let body = document.querySelector("#body");
+let shade = document.querySelector(".black-shade");
+let ul = document.querySelector(".ulist");
+
+menuBar.addEventListener("click",()=>{
+    ul.style.display = "flex";
+    body.style.overflow = "hidden";
+    shade.style.display = "flex"; 
 });
 
-$(document).click(function(e) {
-    if (!$("nav").has(e.target).length && !$(".heropage").has(e.target).length && !$("#close").has(e.target).length) {
-        $("ul").hide(500);
-        $('body').css('overflow', 'scroll');
-        $('.black-shade').hide();
-    }
+closeBtn.addEventListener("click",()=>{
+    ul.style.display = "none";
+    body.style.overflow = "scroll";
+    shade.style.display = "none";  
 });
+
+let nav = document.querySelector(".navbar");
+let heropage = document.querySelector(".heropage");
+
+document.onclick = function(e){
+    if(!nav.contains(e.target) && !heropage.contains(e.target) && !closeBtn.contains(e.target)){
+        ul.style.display = "none";
+        body.style.overflow = "scroll";
+        shade.style.display = "none";  
+    }
+}

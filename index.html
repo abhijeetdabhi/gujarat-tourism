@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Tailwind Script  -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
@@ -32,15 +33,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
-<body class="bg-[#f2efdf]">
+<body id="body" class="bg-[#f2efdf]">
     
     <div class="black-shade absolute top-0 left-0 bg-black/50 w-full h-full hidden"></div>
 
-    <nav class="bg-[#f2efdf] flex items-center justify-between py-5 px-8">
+    <nav class="navbar bg-[#f2efdf] flex items-center justify-between py-5 px-8">
         <div class="logo">
             <img width="80" src="images/logo/gujarat-tourism-logo.png" alt="">
         </div>
-        <ul class="absolute top-0 right-0 bg-[#f2efdf] h-full w-[250px] uppercase text-sm font-bold hidden lg:relative z-50 lg:flex lg:w-full lg:items-center lg:justify-center">
+        <ul class="ulist absolute top-0 right-0 bg-[#f2efdf] h-full w-[250px] uppercase text-sm font-bold hidden lg:relative z-50 lg:flex lg:w-full lg:items-center lg:justify-center">
             <div id="close" class="absolute top-3 right-0 px-3 lg:hidden cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill="#000000" fill-rule="evenodd" d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z" clip-rule="evenodd" opacity="1" data-original="#000000" class=""></path></g></svg>
             </div>
@@ -461,7 +462,7 @@
     </section>
 
     <!-- gallary -->
-    <section class="gallary grid grid-cols-2 gap-5 py-8 md:grid-cols-3 lg:grid-cols-6">
+    <section class="gallary grid grid-cols-1 gap-y-6 gap-x-5 md:grid-cols-3 lg:grid-cols-6 py-8 px-5">
         <div class="group relative overflow-hidden cursor-pointer">
             <img class="w-full h-full object-cover" src="images/gallary/gallary-1.jpg" alt="">
             <div class="absolute w-full h-full left-0 top-0 hidden items-center justify-center bg-[#ff9933]/60 group-hover:flex transition duration-200">
@@ -544,9 +545,7 @@
         </div>
     </footer>
 
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
     <script src="script.js"></script>
+        
 </body>
 </html>
